@@ -1,0 +1,30 @@
+# Model checkpoints (terlalu besar untuk GitHub)
+results/checkpoints/
+
+# Dataset (tidak di-push, gunakan BUSI original)
+dataset/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.log

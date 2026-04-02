@@ -1,0 +1,6 @@
+Model,P1_Mean_Dice,P2_Audit_Dice,SEF_Seg_Dice,SEF_Specificity,SEF_Sensitivity,SEF_Composite,N_Positive,N_Negative,Rank_P1_Mean_Dice,Rank_P2_Audit_Dice,Rank_SEF_Composite
+Unet,0.8202,0.7922,0.7922,0.9524,0.9798,0.8196,99,21,1,1,1
+Linknet,0.8081,0.7876,0.7876,0.9048,0.9798,0.8077,99,21,2,2,2
+Unetpp,0.7857,0.7807,0.7807,0.8095,0.9697,0.7856,99,21,4,3,4
+Manet,0.7867,0.7718,0.7718,0.8571,0.9596,0.7864,99,21,3,4,3
+Attention Unet,0.779,0.7624,0.7624,0.8571,0.9697,0.7786,99,21,5,5,5

@@ -1,0 +1,6 @@
+model,rank_P1_Standard,rank_P2_Audit,rank_SEF_Composite,rank_change_P1_vs_P2,rank_change_P1_vs_SEF
+unet,1,1,1,0,0
+attention_unet,5,5,5,0,0
+unetpp,4,3,4,1,0
+manet,3,4,3,1,0
+linknet,2,2,2,0,0

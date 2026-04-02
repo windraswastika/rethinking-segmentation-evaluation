@@ -1,0 +1,11 @@
+model_a,model_b,statistic,p_value,significant
+unet,attention_unet,1556.0,0.0031536418035232514,True
+unet,unetpp,2153.0,0.4212784112181809,False
+unet,manet,1755.0,0.025331964870735912,True
+unet,linknet,1541.0,0.002644265947461021,True
+attention_unet,unetpp,1536.0,0.0038010881064341065,True
+attention_unet,manet,2107.0,0.41931933818350453,False
+attention_unet,linknet,2336.0,0.8841357380258671,False
+unetpp,manet,2045.0,0.3010567152584721,False
+unetpp,linknet,1808.0,0.04079612911589988,True
+manet,linknet,2017.0,0.19581566852962917,False

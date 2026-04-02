@@ -1,0 +1,215 @@
+objc[21228]: Class AVFFrameReceiver is implemented in both /opt/anaconda3/lib/python3.13/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x16c6883a8) and /opt/anaconda3/lib/python3.13/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1747803a8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[21228]: Class AVFAudioReceiver is implemented in both /opt/anaconda3/lib/python3.13/site-packages/av/.dylibs/libavdevice.62.1.100.dylib (0x16c6883f8) and /opt/anaconda3/lib/python3.13/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1747803f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+Device: mps
+============================================================
+PHASE 3 — Empirical Validation (Multi-Model)
+Device: mps | Image size: 256 | Batch: 16
+============================================================
+  Loaded existing split from data_split.csv
+  Train: 545 | Val: 115 | Test: 120
+
+============================================================
+Training: UNET
+============================================================
+  Epoch   5/100 | loss=0.5065 | P2_dice=0.6456 | P1_dice=0.5563 | SEF=0.4673 | 26.4s
+    ✓ Checkpoint saved (val_dice=0.6456)
+  Epoch  10/100 | loss=0.3832 | P2_dice=0.6970 | P1_dice=0.7297 | SEF=0.7623 | 25.6s
+    ✓ Checkpoint saved (val_dice=0.6970)
+  Epoch  15/100 | loss=0.2794 | P2_dice=0.6822 | P1_dice=0.7086 | SEF=0.7350 | 26.4s
+  Epoch  20/100 | loss=0.2119 | P2_dice=0.7362 | P1_dice=0.6841 | SEF=0.6322 | 25.3s
+    ✓ Checkpoint saved (val_dice=0.7362)
+  Epoch  25/100 | loss=0.1953 | P2_dice=0.7307 | P1_dice=0.7317 | SEF=0.7327 | 28.6s
+  Epoch  30/100 | loss=0.1803 | P2_dice=0.7259 | P1_dice=0.7364 | SEF=0.7469 | 24.5s
+  Epoch  35/100 | loss=0.1456 | P2_dice=0.7260 | P1_dice=0.7452 | SEF=0.7643 | 29.1s
+  Epoch  40/100 | loss=0.1556 | P2_dice=0.7338 | P1_dice=0.7691 | SEF=0.8043 | 26.3s
+  Epoch  45/100 | loss=0.1397 | P2_dice=0.7448 | P1_dice=0.7869 | SEF=0.8290 | 25.4s
+    ✓ Checkpoint saved (val_dice=0.7448)
+  Epoch  50/100 | loss=0.1095 | P2_dice=0.7488 | P1_dice=0.7816 | SEF=0.8144 | 25.9s
+    ✓ Checkpoint saved (val_dice=0.7488)
+  Epoch  55/100 | loss=0.1273 | P2_dice=0.7300 | P1_dice=0.7746 | SEF=0.8191 | 25.1s
+  Epoch  60/100 | loss=0.1199 | P2_dice=0.7440 | P1_dice=0.7602 | SEF=0.7764 | 25.8s
+  Epoch  65/100 | loss=0.1134 | P2_dice=0.7500 | P1_dice=0.7652 | SEF=0.7804 | 25.7s
+    ✓ Checkpoint saved (val_dice=0.7500)
+  Epoch  70/100 | loss=0.1060 | P2_dice=0.7580 | P1_dice=0.7719 | SEF=0.7858 | 25.4s
+    ✓ Checkpoint saved (val_dice=0.7580)
+  Epoch  75/100 | loss=0.1003 | P2_dice=0.7568 | P1_dice=0.7796 | SEF=0.8023 | 27.9s
+  Epoch  80/100 | loss=0.0924 | P2_dice=0.7558 | P1_dice=0.7788 | SEF=0.8016 | 25.9s
+  Epoch  85/100 | loss=0.0907 | P2_dice=0.7573 | P1_dice=0.7800 | SEF=0.8027 | 26.6s
+  Epoch  90/100 | loss=0.0895 | P2_dice=0.7561 | P1_dice=0.7790 | SEF=0.8018 | 26.7s
+  Epoch  95/100 | loss=0.0966 | P2_dice=0.7584 | P1_dice=0.7809 | SEF=0.8034 | 25.6s
+    ✓ Checkpoint saved (val_dice=0.7584)
+  Epoch 100/100 | loss=0.0879 | P2_dice=0.7605 | P1_dice=0.7827 | SEF=0.8048 | 27.8s
+    ✓ Checkpoint saved (val_dice=0.7605)
+
+============================================================
+Training: ATTENTION_UNET
+============================================================
+  Epoch   5/100 | loss=0.4534 | P2_dice=0.6260 | P1_dice=0.5225 | SEF=0.4194 | 34.5s
+    ✓ Checkpoint saved (val_dice=0.6260)
+  Epoch  10/100 | loss=0.3150 | P2_dice=0.6806 | P1_dice=0.6464 | SEF=0.6123 | 36.8s
+    ✓ Checkpoint saved (val_dice=0.6806)
+  Epoch  15/100 | loss=0.2560 | P2_dice=0.7164 | P1_dice=0.7458 | SEF=0.7752 | 33.8s
+    ✓ Checkpoint saved (val_dice=0.7164)
+  Epoch  20/100 | loss=0.1942 | P2_dice=0.7347 | P1_dice=0.7437 | SEF=0.7528 | 36.6s
+    ✓ Checkpoint saved (val_dice=0.7347)
+  Epoch  25/100 | loss=0.1803 | P2_dice=0.7125 | P1_dice=0.7252 | SEF=0.7379 | 40.6s
+  Epoch  30/100 | loss=0.1558 | P2_dice=0.6996 | P1_dice=0.7318 | SEF=0.7640 | 36.0s
+  Epoch  35/100 | loss=0.1588 | P2_dice=0.7084 | P1_dice=0.7392 | SEF=0.7699 | 33.1s
+  Epoch  40/100 | loss=0.1390 | P2_dice=0.7305 | P1_dice=0.7403 | SEF=0.7500 | 35.1s
+  Epoch  45/100 | loss=0.1255 | P2_dice=0.7365 | P1_dice=0.7453 | SEF=0.7540 | 34.7s
+    ✓ Checkpoint saved (val_dice=0.7365)
+  Epoch  50/100 | loss=0.1181 | P2_dice=0.7366 | P1_dice=0.7366 | SEF=0.7367 | 36.9s
+    ✓ Checkpoint saved (val_dice=0.7366)
+  Epoch  55/100 | loss=0.1134 | P2_dice=0.7359 | P1_dice=0.7534 | SEF=0.7709 | 37.3s
+  Epoch  60/100 | loss=0.1061 | P2_dice=0.7474 | P1_dice=0.7718 | SEF=0.7960 | 34.8s
+    ✓ Checkpoint saved (val_dice=0.7474)
+  Epoch  65/100 | loss=0.1000 | P2_dice=0.7250 | P1_dice=0.7618 | SEF=0.7984 | 35.4s
+  Epoch  70/100 | loss=0.0973 | P2_dice=0.7466 | P1_dice=0.7624 | SEF=0.7781 | 35.1s
+  Epoch  75/100 | loss=0.1015 | P2_dice=0.7397 | P1_dice=0.7653 | SEF=0.7908 | 36.2s
+  Epoch  80/100 | loss=0.0950 | P2_dice=0.7335 | P1_dice=0.7601 | SEF=0.7867 | 36.5s
+  Epoch  85/100 | loss=0.1064 | P2_dice=0.7370 | P1_dice=0.7631 | SEF=0.7890 | 36.7s
+  Epoch  90/100 | loss=0.0957 | P2_dice=0.7427 | P1_dice=0.7765 | SEF=0.8102 | 35.6s
+  Epoch  95/100 | loss=0.0863 | P2_dice=0.7335 | P1_dice=0.7688 | SEF=0.8041 | 40.0s
+  Epoch 100/100 | loss=0.0915 | P2_dice=0.7381 | P1_dice=0.7727 | SEF=0.8072 | 35.9s
+
+============================================================
+Training: UNETPP
+============================================================
+  Epoch   5/100 | loss=0.4821 | P2_dice=0.6760 | P1_dice=0.5817 | SEF=0.4876 | 51.2s
+    ✓ Checkpoint saved (val_dice=0.6760)
+  Epoch  10/100 | loss=0.3735 | P2_dice=0.7160 | P1_dice=0.6586 | SEF=0.6013 | 50.6s
+    ✓ Checkpoint saved (val_dice=0.7160)
+  Epoch  15/100 | loss=0.3200 | P2_dice=0.7203 | P1_dice=0.7317 | SEF=0.7431 | 51.6s
+    ✓ Checkpoint saved (val_dice=0.7203)
+  Epoch  20/100 | loss=0.2485 | P2_dice=0.7285 | P1_dice=0.7386 | SEF=0.7486 | 51.4s
+    ✓ Checkpoint saved (val_dice=0.7285)
+  Epoch  25/100 | loss=0.2158 | P2_dice=0.7175 | P1_dice=0.6946 | SEF=0.6718 | 51.1s
+  Epoch  30/100 | loss=0.2146 | P2_dice=0.7186 | P1_dice=0.7477 | SEF=0.7768 | 54.5s
+  Epoch  35/100 | loss=0.1582 | P2_dice=0.7599 | P1_dice=0.7735 | SEF=0.7870 | 55.2s
+    ✓ Checkpoint saved (val_dice=0.7599)
+  Epoch  40/100 | loss=0.1613 | P2_dice=0.7465 | P1_dice=0.7710 | SEF=0.7954 | 49.9s
+  Epoch  45/100 | loss=0.1441 | P2_dice=0.7467 | P1_dice=0.7625 | SEF=0.7782 | 52.5s
+  Epoch  50/100 | loss=0.1400 | P2_dice=0.7598 | P1_dice=0.7734 | SEF=0.7870 | 62.2s
+  Epoch  55/100 | loss=0.1183 | P2_dice=0.7608 | P1_dice=0.7829 | SEF=0.8050 | 55.1s
+    ✓ Checkpoint saved (val_dice=0.7608)
+  Epoch  60/100 | loss=0.1118 | P2_dice=0.7633 | P1_dice=0.7763 | SEF=0.7893 | 54.9s
+    ✓ Checkpoint saved (val_dice=0.7633)
+  Epoch  65/100 | loss=0.1143 | P2_dice=0.7396 | P1_dice=0.7740 | SEF=0.8082 | 55.6s
+  Epoch  70/100 | loss=0.1106 | P2_dice=0.7671 | P1_dice=0.7621 | SEF=0.7571 | 54.8s
+    ✓ Checkpoint saved (val_dice=0.7671)
+  Epoch  75/100 | loss=0.1003 | P2_dice=0.7613 | P1_dice=0.7834 | SEF=0.8053 | 56.4s
+  Epoch  80/100 | loss=0.1025 | P2_dice=0.7794 | P1_dice=0.7985 | SEF=0.8175 | 55.6s
+    ✓ Checkpoint saved (val_dice=0.7794)
+  Epoch  85/100 | loss=0.0974 | P2_dice=0.7718 | P1_dice=0.7921 | SEF=0.8123 | 58.5s
+  Epoch  90/100 | loss=0.0879 | P2_dice=0.7801 | P1_dice=0.7904 | SEF=0.8006 | 53.7s
+    ✓ Checkpoint saved (val_dice=0.7801)
+  Epoch  95/100 | loss=0.1011 | P2_dice=0.7791 | P1_dice=0.7982 | SEF=0.8172 | 54.2s
+  Epoch 100/100 | loss=0.1046 | P2_dice=0.7713 | P1_dice=0.8004 | SEF=0.8294 | 55.6s
+
+============================================================
+Training: MANET
+============================================================
+  Epoch   5/100 | loss=0.4260 | P2_dice=0.6464 | P1_dice=0.5831 | SEF=0.5199 | 32.5s
+    ✓ Checkpoint saved (val_dice=0.6464)
+  Epoch  10/100 | loss=0.2926 | P2_dice=0.6763 | P1_dice=0.6341 | SEF=0.5921 | 31.4s
+    ✓ Checkpoint saved (val_dice=0.6763)
+  Epoch  15/100 | loss=0.2438 | P2_dice=0.6949 | P1_dice=0.7106 | SEF=0.7261 | 35.3s
+    ✓ Checkpoint saved (val_dice=0.6949)
+  Epoch  20/100 | loss=0.1846 | P2_dice=0.6877 | P1_dice=0.7219 | SEF=0.7560 | 22.3s
+  Epoch  25/100 | loss=0.1823 | P2_dice=0.7075 | P1_dice=0.7210 | SEF=0.7345 | 24.7s
+    ✓ Checkpoint saved (val_dice=0.7075)
+  Epoch  30/100 | loss=0.1817 | P2_dice=0.7084 | P1_dice=0.7566 | SEF=0.8047 | 27.2s
+    ✓ Checkpoint saved (val_dice=0.7084)
+  Epoch  35/100 | loss=0.1556 | P2_dice=0.7421 | P1_dice=0.7586 | SEF=0.7751 | 27.6s
+    ✓ Checkpoint saved (val_dice=0.7421)
+  Epoch  40/100 | loss=0.1438 | P2_dice=0.7289 | P1_dice=0.7563 | SEF=0.7836 | 35.5s
+  Epoch  45/100 | loss=0.1333 | P2_dice=0.7278 | P1_dice=0.7641 | SEF=0.8003 | 32.6s
+  Epoch  50/100 | loss=0.1395 | P2_dice=0.7342 | P1_dice=0.7433 | SEF=0.7524 | 30.3s
+  Epoch  55/100 | loss=0.1459 | P2_dice=0.7045 | P1_dice=0.7185 | SEF=0.7325 | 29.4s
+  Epoch  60/100 | loss=0.1492 | P2_dice=0.7072 | P1_dice=0.7381 | SEF=0.7691 | 28.4s
+  Epoch  65/100 | loss=0.1278 | P2_dice=0.7053 | P1_dice=0.7453 | SEF=0.7852 | 31.3s
+  Epoch  70/100 | loss=0.1185 | P2_dice=0.7402 | P1_dice=0.7570 | SEF=0.7738 | 29.3s
+  Epoch  75/100 | loss=0.1093 | P2_dice=0.7428 | P1_dice=0.7592 | SEF=0.7756 | 30.1s
+    ✓ Checkpoint saved (val_dice=0.7428)
+  Epoch  80/100 | loss=0.1072 | P2_dice=0.7404 | P1_dice=0.7485 | SEF=0.7566 | 27.7s
+  Epoch  85/100 | loss=0.1230 | P2_dice=0.7326 | P1_dice=0.7507 | SEF=0.7688 | 27.8s
+  Epoch  90/100 | loss=0.1022 | P2_dice=0.7366 | P1_dice=0.7453 | SEF=0.7540 | 28.1s
+  Epoch  95/100 | loss=0.1036 | P2_dice=0.7378 | P1_dice=0.7464 | SEF=0.7549 | 27.8s
+  Epoch 100/100 | loss=0.1058 | P2_dice=0.7383 | P1_dice=0.7555 | SEF=0.7726 | 28.1s
+
+============================================================
+Training: LINKNET
+============================================================
+  Epoch   5/100 | loss=0.6926 | P2_dice=0.0992 | P1_dice=0.0828 | SEF=0.0664 | 21.1s
+    ✓ Checkpoint saved (val_dice=0.0992)
+  Epoch  10/100 | loss=0.5230 | P2_dice=0.6139 | P1_dice=0.5124 | SEF=0.4113 | 20.7s
+    ✓ Checkpoint saved (val_dice=0.6139)
+  Epoch  15/100 | loss=0.4263 | P2_dice=0.6807 | P1_dice=0.6552 | SEF=0.6298 | 20.4s
+    ✓ Checkpoint saved (val_dice=0.6807)
+  Epoch  20/100 | loss=0.3646 | P2_dice=0.6872 | P1_dice=0.6867 | SEF=0.6862 | 20.2s
+    ✓ Checkpoint saved (val_dice=0.6872)
+  Epoch  25/100 | loss=0.3351 | P2_dice=0.6975 | P1_dice=0.6431 | SEF=0.5889 | 20.7s
+    ✓ Checkpoint saved (val_dice=0.6975)
+  Epoch  30/100 | loss=0.2782 | P2_dice=0.7144 | P1_dice=0.7094 | SEF=0.7044 | 21.2s
+    ✓ Checkpoint saved (val_dice=0.7144)
+  Epoch  35/100 | loss=0.2468 | P2_dice=0.7328 | P1_dice=0.7335 | SEF=0.7341 | 20.8s
+    ✓ Checkpoint saved (val_dice=0.7328)
+  Epoch  40/100 | loss=0.2411 | P2_dice=0.7194 | P1_dice=0.7223 | SEF=0.7252 | 21.1s
+  Epoch  45/100 | loss=0.2088 | P2_dice=0.7384 | P1_dice=0.7294 | SEF=0.7205 | 22.3s
+    ✓ Checkpoint saved (val_dice=0.7384)
+  Epoch  50/100 | loss=0.1861 | P2_dice=0.7354 | P1_dice=0.7618 | SEF=0.7880 | 21.5s
+  Epoch  55/100 | loss=0.1740 | P2_dice=0.7090 | P1_dice=0.7397 | SEF=0.7703 | 22.1s
+  Epoch  60/100 | loss=0.1833 | P2_dice=0.7390 | P1_dice=0.7647 | SEF=0.7904 | 21.7s
+    ✓ Checkpoint saved (val_dice=0.7390)
+  Epoch  65/100 | loss=0.1534 | P2_dice=0.7661 | P1_dice=0.7613 | SEF=0.7565 | 21.1s
+    ✓ Checkpoint saved (val_dice=0.7661)
+  Epoch  70/100 | loss=0.1642 | P2_dice=0.7581 | P1_dice=0.7807 | SEF=0.8032 | 21.6s
+  Epoch  75/100 | loss=0.1486 | P2_dice=0.7635 | P1_dice=0.7765 | SEF=0.7894 | 21.3s
+  Epoch  80/100 | loss=0.1398 | P2_dice=0.7646 | P1_dice=0.7600 | SEF=0.7554 | 21.5s
+  Epoch  85/100 | loss=0.1429 | P2_dice=0.7639 | P1_dice=0.7681 | SEF=0.7723 | 22.0s
+  Epoch  90/100 | loss=0.1419 | P2_dice=0.7586 | P1_dice=0.7724 | SEF=0.7861 | 21.6s
+  Epoch  95/100 | loss=0.1321 | P2_dice=0.7636 | P1_dice=0.7766 | SEF=0.7895 | 21.8s
+  Epoch 100/100 | loss=0.1429 | P2_dice=0.7600 | P1_dice=0.7649 | SEF=0.7697 | 21.3s
+
+============================================================
+EVALUATION — Test Set (3 Protocols)
+============================================================
+  unet: P1=0.8202 | P2=0.7922 | SEF=0.8451
+  attention_unet: P1=0.7790 | P2=0.7624 | SEF=0.7937
+  unetpp: P1=0.7857 | P2=0.7807 | SEF=0.7902
+  manet: P1=0.7867 | P2=0.7718 | SEF=0.7999
+  linknet: P1=0.8081 | P2=0.7876 | SEF=0.8263
+
+── Comparison Table ──
+         Model     P1_Standard        P2_Audit    SEF_Seg_Dice SEF_Specificity SEF_Sensitivity SEF_Composite CI_95_low CI_95_high  n_positive  n_negative
+          Unet 0.8202 ± 0.2560 0.7922 ± 0.2556 0.7922 ± 0.2556          0.9524          0.9798        0.8451    0.7410     0.8434          99          21
+Attention Unet 0.7790 ± 0.3000 0.7624 ± 0.2855 0.7624 ± 0.2855          0.8571          0.9697        0.7937    0.7052     0.8196          99          21
+        Unetpp 0.7857 ± 0.2961 0.7807 ± 0.2709 0.7807 ± 0.2709          0.8095          0.9697        0.7902    0.7264     0.8350          99          21
+         Manet 0.7867 ± 0.3011 0.7718 ± 0.2875 0.7718 ± 0.2875          0.8571          0.9596        0.7999    0.7141     0.8294          99          21
+       Linknet 0.8081 ± 0.2611 0.7876 ± 0.2490 0.7876 ± 0.2490          0.9048          0.9798        0.8263    0.7377     0.8376          99          21
+
+── Ranking Table ──
+         model  rank_P1_Standard  rank_P2_Audit  rank_SEF_Composite  rank_change_P1_vs_P2  rank_change_P1_vs_SEF
+          unet                 1              1                   1                     0                      0
+attention_unet                 5              5                   4                     0                      1
+        unetpp                 4              3                   5                     1                      1
+         manet                 3              4                   3                     1                      0
+       linknet                 2              2                   2                     0                      0
+
+── Wilcoxon Tests (P2 Dice, per-case) ──
+  unet vs attention_unet: p=0.0032 ✓
+  unet vs unetpp: p=0.4213  
+  unet vs manet: p=0.0253 ✓
+  unet vs linknet: p=0.0026 ✓
+  attention_unet vs unetpp: p=0.0038 ✓
+  attention_unet vs manet: p=0.4193  
+  attention_unet vs linknet: p=0.8841  
+  unetpp vs manet: p=0.3011  
+  unetpp vs linknet: p=0.0408 ✓
+  manet vs linknet: p=0.1958  
+
+── Generating Figures ──
+  Figure saved: results/figures/phase3_protocol_comparison.png
+  Figure saved: results/figures/phase3_ranking_heatmap.png
+
+All results saved to experiments/phase3/

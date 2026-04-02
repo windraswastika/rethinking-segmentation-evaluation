@@ -1,0 +1,8 @@
+library,tn_behavior,fp_behavior,note
+Custom (smooth=1e-6),1.0,0.0,most common pattern on GitHub
+Custom (smooth=1),1.0,0.0099,Laplace smoothing variant
+"Custom (strict, TN→1)",1.0,0.0,returns 1.0 when both empty
+"Custom (strict, TN→0)",0.0,0.0,returns 0.0 when both empty (pessimistic)
+sklearn.f1_score,1.0,0.0,zero_division parameter controls TN behavior
+torchmetrics.Dice,not installed,not installed,pip install torchmetrics
+MONAI DiceMetric,0.0,0.0,include_background=False
